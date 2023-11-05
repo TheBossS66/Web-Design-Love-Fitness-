@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Love Fitness!</title>
+
+	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+	<link rel="stylesheet" type="text/css" href="css/color.css">
+	<link rel="stylesheet" type="text/css" href="css/color2.css">
+	<script src="js/java.js"></script>
+	<script src="js/dropdown.js"></script>
+	<script src="js/top.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script src="js/JSFormValidation.js"></script>
+
+</head>
+<body>
+<div data-role="page">
+
+	<div data-role="header" data-theme="b">
+		<h1>Love Fitness</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+	<ul data-role="listview">
+    	<li><a href="#page1">Content</a></li>
+    	<li><a href="#page2">Classes</a></li>
+    	<li><a href="#page10">About Us</a></li>
+<ul data-role="listview" data-inset="true" data-divider-theme="c">
+    <li data-role="list-divider">Contact us now</li>
+    <li><a href="#member">Membership Enquiry</a></li>
+    <li><a href="#career">Careers</a></li>
+<ul>
+	</ul><br><br>
+		<table id="contact">
+			<tr>
+			<th><img src="images/address.png" class="small"></th>
+			<th><img src="images/clock.png" class="small"></th>
+			<th><img src="images/phone.png" class="small"></th>
+			</tr>
+			<tr>
+			<td>Address :<br><br>
+			1618, Jalan Permatang Pauh, Taman Pauh, <br>
+			13500 Perai, Pulau Pinang<br></td>
+			<td>Monday - Friday: 06:30 - 23:00<br><br>
+			Weekends and Public Holiday: 09:30 - 19:30<br></td>
+			<td>Phone: 016-9084790<br><br>
+			Email: <br><a href="mailto:lovefitness@gmail.com">
+	lovefitness@gmail.com</a><br></td>
+		</table>
+	</div><!-- /content --><br>
+
+	<div data-role="footer" data-theme="b">
+		<h4>Copyright © 2019 by Love Fitness. All rights reserved.</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+
+<div data-role="page" id="page1">
+<div data-role="header" data-position="fixed" data-theme="e">
+	<h1>Love Fitness</h1>
+</div>
+	<img src="images/background.jpg" class="back">
+
+	<div role="main" class="ui-content">
+		<h1 align="center">FITNESS</h1>
+		<hr size="3" width="10%" align="center" color="orange">
+		<p align="center">Not seeing results? 2 Common weight loss methods that might be sabotaging your progress</p>
+		<table id="result">
+		<tr>
+			<th></th>
+		</tr>
+		<tr>
+			<td>COUNTING CALORIES OR USING A MEAL TRACKING APP</td>
+			<td>USING A CALORIE EXPENDITURE TRACKING DEVICE</td>
+		</tr>
+		<tr>
+			<td>Embrace a plant based diet, and fill up on unlimited plants. Remove processed foods from your diet and 
+			focus on fresh vegetables, fruits, whole grains, nuts, and lean meats (or vegetarian/vegan equivalent). Eat 
+			mindfully. When you’re hungry, eat, and learn to recognize your body’s signals of feeling full; stop before you 
+			feel discomfort. Drink lots of water. Don’t waste time looking for shortcuts; eat for good health.</td>
+			<td>Believe it or not, muscles will still be used and fat will still be burned even if you’re not wearing a tracker 
+			as a “witness” to your workouts. Again, once you have a general idea of what it is that you’re supposed to be doing, 
+			take the focus off of micromanaging your expenditure and instead, just show up.</td>
+		</table>
+		<br>
+		
+	</div><!-- /content -->
+<button onclick="topFunction()" title="Go to top">Top</button>
+	<div data-role="footer" data-theme="b">
+
+		<h4>Copyright © 2019 by Love Fitness. All rights reserved.</h4>
+
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="page2">
+<div data-role="header" data-position="fixed" data-theme="e">
+	<h1>Love Fitness</h1>
+</div>
+	<div role="main" class="ui-content" id="forming" >
+	<script type="text/javascript">
+	var image1=new Image()
+	image1.src="images/img1.jpg"
+	var image2=new Image()
+	image2.src="images/img2.jpg"
+	var image3=new Image()
+	image3.src="images/img3.jpg"
+	var image4=new Image()
+	image4.src="images/img4.jpg"
+	var image5=new Image()
+	image5.src="images/img5.jpg"
+	</script>
+	</head>
+	<img src="22c1978dea80c177b45a5122e2d79de0.jpg" name="img" width="400px" height="300px" id="center"/>
+	<script>
+	var step=1
+	function slideImages(){
+	if (!document.images)
+	return
+	document.images.img.src=eval("image"+step+".src")
+	if (step<5)
+	step++
+	else
+	step=1
+	setTimeout("slideImages()",1000)
+	}
+	slideImages()
+	</script>
+	<h1>CLASSES</h1>
+	<hr width="15%" size="3" color="black"><br><br>
+<ul data-role="listview" data-filter="true" data-filter-placeholder="Search Classes..." data-inset="true">
+    <li><a href="#page4">BODYPUMP</a></li>
+    <li><a href="#page5">BODYCOMBAT</a></li>
+    <li><a href="#page6">KONGA</a></li>
+    <li><a href="#page7">POWER DANCE</a></li>
+    <li><a href="#page8">POWER STEP</a></li>
+    <li><a href="#page9">ZUMBA</a></li>
+</ul>
+	</div><!-- /content -->
+
+	<div data-role="footer" data-theme="b">
+
+		<h4>Copyright © 2019 by Love Fitness. All rights reserved.</h4>
+
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="page4">
+<div data-role="header" data-position="fixed" data-theme="e">
+	<h1>Love Fitness</h1>
+</div>
+	<div role="main" class="ui-content" id="forming" >
+	<img src="images/bodypump.jpg" class="center">
+	<h1>BODYPUMP</h1>
+	<hr width="10%" size="3"><br>
+	BODYPUMP™ uses high-repetition movements with light to moderate weights 
+	to sculpt, tone and strengthen your entire body – fast.<br><br>
+	BODYPUMP gives you a total body workout. It will burn up to 540 calories. <br><br>
+	Instructors will coach you through the scientifically proven moves and techniques pumping out 
+	encouragement, motivation and great music – helping you achieve much more than on your own! You’ll 
+	leave the class feeling challenged and motivated, ready to come back for more. BODYPUMP is available 
+	as either a 55, 45 or 30-minute workout. It is also available in some clubs as a virtual workout.<br><br>
+	<a href="#page2" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-l ui-btn-icon-left">back</a>
+	</div><!-- /content -->
+
+	<div data-role="footer" data-theme="b">
+
+		<h4>Copyright © 2019 by Love Fitness. All rights reserved.</h4>
+
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="page5">
+<div data-role="header" data-position="fixed" data-theme="e">
+	<h1>Love Fitness</h1>
+</div>
+	<div role="main" class="ui-content" id="forming" >
+	<img src="images/bodycombat.jpg" class="center">
+	<h1>BODYCOMBAT</h1>
+	<hr width="10%" size="3"><br>
+	BODYCOMBAT is an energy-packed mix of martial arts moves that will get you fit, fast and strong—and 
+	leave you feeling fierce and empowered.<br><br>
+	BODYCOMBAT features a scientifically backed combo of some of the most empowering and effective martial arts moves. 
+	The addition of motivating instructors and amazing music is what pushes you to your true training potential. The workout 
+	is based on the science of Cardio Peak Training, which involves maintaining your heart rate at an aerobic training base 
+	(between 60 and 80 percent of your maximum heart rate) with interspersed peaks of intensity (pushing you to 85 to 90 
+	percent of your max). This specific blend of steady-state and high-intensity builds cardio endurance and also drives 
+	the transformative fat-burning effects associated with high-intensity interval training.<br><br>
+	BODYCOMBAT features moves from karate, taekwondo, boxing, muay Thai, capoeira and kung fu. But don’t fret, you don’t 
+	need any martial arts experience—during the warm-up, you’ll be coached through all the different movements. You can 
+	expect to power through invigorating sets of hooks, jabs and uppercuts, and there are plenty of kicks and high knees, 
+	too. You’ll also benefit from functional training moves such as lunges, squats and push-ups.<br><br>
+	<a href="#page2" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-l ui-btn-icon-left">back</a>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>Copyright © 2019 by Love Fitness. All rights reserved.</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="page6">
+<div data-role="header" data-position="fixed" data-theme="e">
+	<h1>Love Fitness</h1>
+</div>
+	<div role="main" class="ui-content" id="forming" >
+	<img src="images/konga.jpg" class="center">
+	<h1>KONGA</h1>
+	<hr width="10%" size="3"><br>
+	KONGA is an easy-to-follow, high intensity fusion of Boxing, Cardio, Dance & Sculpting set to the hottest beats from all decades. <br><br>
+	Konga is a fierce & wild workout designed to shape, sculpt & redefine your physique while injecting your body with an endorphin 
+	overload. <br>Expect to squat, burpee, sprint & sweat like crazy while some big tunes transport you to your happy place. <br>Whether 
+	you are super fit or totally uncoordinated, Konga is for you! With fresh choreography, new technique & the latest music every 
+	month you will never hit a plateau or get bored!<br><br>
+	
+	A one hour Konga class can burn over 700 calories due to the “switch-up” formula and the sustained high intensity nature of the workout. 
+	The class can even have you burning calories for several hours after as your body expends energy to return to your pre-workout Jungle Body.<br><br>
+
+	Konga can:<br>
+	<ul>
+	<li>Improve coordination<br></li>
+	<li>Increase joint mobility<br></li>
+	<li>Burn over 700 calories<br></li>
+	<li>Tone and shape the entire body<br></li>
+	<li>Boost your metabolism<br><br></li>
+	</ul>
+	<a href="#page2" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-l ui-btn-icon-left">back</a>
+	</div><!-- /content -->
+
+	<div data-role="footer" data-theme="b">
+
+		<h4>Copyright © 2019 by Love Fitness. All rights reserved.</h4>
+
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="page7">
+<div data-role="header" data-position="fixed" data-theme="e">
+	<h1>Love Fitness</h1>
+</div>
+	<div role="main" class="ui-content" id="forming" >
+	<img src="images/dance.jpg" class="center">
+	<h1>POWER DANCE</h1>
+	<hr width="10%" size="3"><br>
+	A dance workout is a great way to build cardio fitness and move to the beat of the hottest dance music around. <br><br>
+	Dance away your stress with our variety of dance styles here at Love Fitness, including Hip-Hop, belly-dancing, 
+	Latino, cardio, Power, Funk, K-Pop and many, many more!<br><br>
+	Our Dance programme is designed for all fitness levels, so if you're a little out of shape or already 
+	super-fit, a new dancer or with years of experience, you'll find our dance class is exactly what you need.<br><br>
+	Our instructors will help you train like a true dancer and enjoy the cardiovascular and body-toning benefits of 
+	a dynamic workout that tones muscles, develops core strength and increases balance.<br><br>
+	Our high-energy dance workout will make you sweat as you learn the latest moves from the clubs and 
+	music videos.<br><br>
+	<a href="#page2" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-l ui-btn-icon-left">back</a>
+	</div><!-- /content -->
+
+	<div data-role="footer" data-theme="b">
+
+		<h4>Copyright © 2019 by Love Fitness. All rights reserved.</h4>
+
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="page8">
+<div data-role="header" data-position="fixed" data-theme="e">
+	<h1>Love Fitness</h1>
+</div>
+	<div role="main" class="ui-content" id="forming" >
+	<img src="images/powerstep.jpg" class="center">
+	<h1>POWERSTEP</h1>
+	<hr width="10%" size="3"><br>
+	Step aerobics is the original aerobics style, distinguished from other types 
+	of aerobics by incorporating an elevated platform (the “step”) to increase your 
+	cardio workout and lower the strain on joints and muscles.<br><br>
+	Choreographed routines provided by our professional instructors here at Love Fitness 
+	make this class a high-energy cardio workout, and suitable for men and women of all ages 
+	and size.<br><br>
+	The "step" is a 4-inch to 12-inch raised platform. You step up, around, and down from the platform 
+	in different patterns to boost your heart rate and breathing, and strengthen your muscles.<br><br>
+	Step aerobics moves range from simple to advanced. The most basic is a step-up, step-down. Once you get 
+	more experienced, you do moves that take you over the top and around the step forwards, sideways, and backwards.<br><br>
+	Most people take step aerobics classes at a gym, with an instructor showing you each move. The instructor 
+	and the upbeat music motivate you to keep going.<br><br>
+	Your class will start with a warm-up, followed by choreographed routines on the step, and a cooldown at 
+	the end. In some classes, you'll use hand weights for strength-training moves off the step.<br><br>
+	<a href="#page2" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-l ui-btn-icon-left">back</a>
+	</div><!-- /content -->
+
+	<div data-role="footer" data-theme="b">
+
+		<h4>Copyright © 2019 by Love Fitness. All rights reserved.</h4>
+
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="page9">
+<div data-role="header" data-position="fixed" data-theme="e">
+	<h1>Love Fitness</h1>
+</div>
+	<div role="main" class="ui-content" id="forming" >
+	<img src="images/zumba.jpg" class="center">
+	<h1>Zumba</h1>
+	<hr width="10%" size="3"><br>
+	Zumba is a high-energy combination of dance and aerobic exercises drawn from Latin American music, 
+	hip-hop beats, Bollywood movies and belly-dancing techniques. <br><br>
+	Zumba specifically targets abs, thighs, arms, and bums, as well as providing a great cardio workout to keep you fit and toned.<br><br>
+	Zumba is a total-body cardio and aerobic workout, which provides a large calorie consumption. A study shows that a person burns 
+	300 to 900kcal with an hour long Zumba exercise.<br><br>
+	Because Zumba offers different options, proponents of the Zumba program claim that it is safe for all ages, meaning that anyone 
+	from age 0 to 100 can participate in this form of aerobic exercise. Some of the classes are specifically aimed at elderly people, 
+	to help them build strength, improve motion and posture, and socialize.<br><br>
+	<a href="#page2" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-l ui-btn-icon-left">back</a>
+	</div><!-- /content -->
+
+	<div data-role="footer" data-theme="b">
+
+		<h4>Copyright © 2019 by Love Fitness. All rights reserved.</h4>
+
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="page10">
+<div data-role="header" data-position="fixed" data-theme="e">
+	<h1>Love Fitness</h1>
+</div>
+	<div role="main" class="ui-content" id="forming" >
+	<h1>ABOUT US</h1>
+	<hr width="10%" size="3"><br>
+	We’re dedicated to providing our viewers with reliable, evidence-based health and medical information 
+	from the country’s top healthcare providers and patient advocates at the middle of clinical care.<br><br>
+
+Starting at the moment, you are going to learn just how tiny little modifications, done deliberately, 
+can allow you to live a better, happier, healthier, more fulfilling lifestyle. Sure, we will cover how 
+to work out with no gym, and the best way to cook a simple meal, and things like this. But we are going 
+to dive deep into fixing your mindset, assisting you to build habits, and change your life one choice at a time.<br><br>
+
+Through educational articles and slideshows, comprehensive reference guides, interactive programs, 
+fun quizzes, and societal video, we assist you to browse each step of your health and healthcare journeys.<br><br>
+
+This site is a resource for you to learn and expand your understanding of nutrition, fitness, and health. 
+We’ve got a group of enthusiastic experts who are here to help you accomplish your targets. And because we know 
+you are busy, we cut through the science talk to give you the information you want quickly. This site is dedicated 
+to you, for you, so join in the conversation! And feel free to submit questions.<br><br>
+	</div><!-- /content -->
+
+	<div data-role="footer" data-theme="b">
+
+		<h4>Copyright © 2019 by Love Fitness. All rights reserved.</h4>
+
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="member">
+<div data-role="header" data-position="fixed" data-theme="e">
+	<h1>Love Fitness</h1>
+</div>
+	<div role="main" class="ui-content" id="forming" >
+	<h1>GET YOUR 3-DAY FREE TRIAL PASS TODAY!</h1><br>
+	
+	<h3>We would love to hear from you!<h3>
+	<h3>Please fill in this form and we will get in touch with you shortly.</h3>
+	<hr size="2" color="black" width="20%">
+ 
+  <form action="success.html" name="form1" onsubmit="return formValidator();">
+	<table border="0" id="form1">
+	<tr>
+	<td>Name :</td>
+	<td><input type="text" name="name" /></td>
+	</tr>
+	<tr>
+	<td>Email :</td>
+	<td><input type="text" name="email" /></td>
+	</tr>
+	<tr>
+	<td>Mobile Number :</td>
+	<td><input type="text" name="mob" /></td>
+	</tr> 
+	<tr>
+	<td></td>
+	<td><input type="submit" value="Submit" /><input type="reset" value="Reset" /></td>
+	</tr>
+	</table>
+	</form>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-theme="b">
+
+		<h4>Copyright © 2019 by Love Fitness. All rights reserved.</h4>
+
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="career">
+<div data-role="header" data-position="fixed" data-theme="e">
+	<h1>Love Fitness</h1>
+</div>
+	<div role="main" class="ui-content" id="forming" >
+	<h1>CAREERS</h1>
+	<hr width="10%" size="3"><br>
+	Hello,<br><br>
+	Thank you for taking the time to visit our careers page.<br><br>
+	We are specifically looking for :<br><br>
+	<ol>
+	<li>
+	Personal Trainers with a minimum of 3 years experience. <br><br></li>
+	<li>Gym Instructors (No experience necessary, on the job training provided
+		and opportunity for career advancement) <br><br></li>
+	</ol>
+	Are you thinking about working for us? If you are, please contact us now!
+	Love Fitness prides itself on only hiring the best people for the best jobs in the 
+	health and fitness industry. <br><br>At Love Fitness, we really care about our members and that's 
+	why we encourage only the brightest and best to apply to work with us - to help us serve 
+	our members even better everday!<br><br> How do we have fun and still get results? We choose our 
+	people for their ability to provide excellent service to our members.<br><br>
+	We look for people who are :<br><br>
+	* Enjoy people and enjoy life<br><br>
+	* Have the drive to succeed in their lives<br><br>
+	* Respect members and colleagues<br><br>
+	* Accept challenges and find ways to improve everday<br><br>
+	Does this describe you? If YES, contact us now and see what opportunities await 
+	you at Love Fitness.<br><br>
+	Your future could start today, please send in your resume to <a href="mailto:lovefitness@gmail.com">
+	lovefitness@gmail.com</a> or just walk in our Love Fitness.
+	</div><!-- /content -->
+
+	<div data-role="footer" data-theme="b">
+
+		<h4>Copyright © 2019 by Love Fitness. All rights reserved.</h4>
+
+	</div><!-- /footer -->
+</div><!-- /page -->
+</body>
+</html>
