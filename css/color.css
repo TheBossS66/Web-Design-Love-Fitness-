@@ -1,1 +1,22 @@
-
+/* Bar: Toolbars, dividers, sider track */
+.ui-bar-c,
+.ui-page-theme-c .ui-bar-inherit,
+html .ui-bar-c .ui-bar-inherit,
+html .ui-body-c .ui-bar-inherit,
+html body .ui-group-theme-c .ui-bar-inherit {
+	background: 			#5e87b0;
+	background-image: -webkit-gradient(linear, left top, left bottom, from( #6facd5 ), to( #497bae )); 
+	background-image: -webkit-linear-gradient( #6facd5 , #497bae ); 
+	background-image:    -moz-linear-gradient( #6facd5 , #497bae ); 
+	background-image:     -ms-linear-gradient( #6facd5 , #497bae ); 
+	background-image:      -o-linear-gradient( #6facd5 , #497bae ); 
+	background-image:         linear-gradient( #6facd5, #497bae);
+	border-color:	 		#456f9a;
+	color: 					#fff;
+	text-shadow: 0 1px 0 	#3e6790;
+	font-weight: bold;
+}
+.ui-bar-bc{
+	border-width: 1px;
+	border-style: solid;
+}
